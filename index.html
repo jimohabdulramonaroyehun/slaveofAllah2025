@@ -59,7 +59,7 @@
           />
         </h1>
         <p>
-          Bisimillahi Rahmon Raheem. <br />
+          <div>Bisimillahi Rahmon Raheem</div>
           All praise be to Almighty God. He grants knowledge to whomever He
           will. To Him belongs whatsoever is in the Heavens and on the Earth. I
           give Glory to Him for giving me the opportunity to start learnig web
@@ -185,6 +185,86 @@
           >List of Publications</a
         >
       </div>
+      <section>
+        <table>
+            <caption>Draft Learning Calendar</caption>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>course</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Duration</th>
+                    <th>Remark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>html</td>
+                    <td>21st November, 2025</td>
+                    <td>26th November 2025</td>
+                    <td>5 Days</td>
+                    <td>completed</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CSS</td>
+                    <td>28st November, 2025</td>
+                    <td>5th December 2025</td>
+                    <td colspan="2">one Week</td>
+                    <td>To be completed</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JAVASCRIPT</td>
+                    <td>5th December, 2025</td>
+                    <td>12th December 2025</td>
+                    <td>One Week</td>
+                    <td>To be completed</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total number of days =</td>
+                    <td colspan="2">21 Days (expected)</td>
+                </tr>
+            </tfoot>
+        </table>
+      </section>
+      <section>
+        <div>
+          <figure>
+            <img src="https://th.bing.com/th?id=OIF.37vG%2ftpZHxzWunGUu06Pzg&rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        </figure>
+        <figcaption>Figure 1: Shahada</figcaption>
+        </div>
+        <div>
+            <tr>
+                <th>
+                    <ul>
+                        <Li>EQUATION</Li>
+                        I <sup>2</sup>R = Power
+                    </ul>
+                </th>
+                <th>
+                    <p>Terminologies</p>
+                    <ul>
+                        <li>Resistance</li>
+                        <p>Resistance is defined as the oppposition to the easily flow of electric current in a closed circuit. it is measured in Ohms. when resistors are connected in series the effective resistence is equal to the algebraic sum of the resistances connected together</p>
+                        R <sub>t</sub>= R <sub>1</sub> + R <sub>2</sub> + ........
+                        <li>Current</li>
+                        <p>Current is the rate of flow of charges in a closed circuit. By conventional rule, whenever electron flows from negative terminal to positive terminal , current will flow in opposite direction from higher potential to lower potential</p>
+
+
+                    </ul>
+
+                </th>
+            </tr>
+        </div>
+        
+      </section>
+
 
       <div>
         <!-- Key PERFORMANCE Indicator -->
@@ -199,7 +279,7 @@
             required
           />
           <br />
-          <br />
+          
           <label for="email">Email</label>
           <input
             id="email"
@@ -209,7 +289,7 @@
             maxlength="100"
           />
           <br />
-          <br />
+          
           <label for="phone">Phone Number</label>
           <input
             id="phone"
@@ -219,7 +299,7 @@
             pattern="[0-9]{11}"
           />
           <br />
-          <br />
+          
           <label for="date">Date</label>
           <input
             id="date"
@@ -228,7 +308,7 @@
             placeholder="Enter Date eg 29 November 2025"
           />
           <br />
-          <br />
+          
           <label for="gender">Gender</label>
           <select id="gender" name="Gender">
             <option value="M">Male</option>
@@ -242,14 +322,14 @@
             placeholder="Enter your title eg Dr., Engr., Mr; Mrs; etc"
             required
           />
-          <br />
-          <label for="comment" style="display: block"
+          <div> <label for="comment" style="display: block"
             >Make a brief comment, suggestions and recommendation in respect of
             sthe standard of this web page</label
           >
-          <textarea id="comment" name="Comment" cols="36" rows="10"></textarea>
-          <br />
-          <br />
+          <textarea id="comment" name="Comment" cols="36" rows="10"></textarea></div>
+         
+          
+          
           <label for="quality">Quality of Web Page</label>
           <select id="quality" name="Qualty">
             <option value="Excellent">Excellent</option>
@@ -258,8 +338,9 @@
             <option value="fair">Fair</option>
             <option value="poor">Poor</option>
           </select>
-          <label for="check"> I am not a Robot </label>
-          <input id="check" type="checkbox" name="robotcheck" /> <br />
+          <div><label for="check"> I am not a Robot </label>
+          <input id="check" type="checkbox" name="robotcheck" /></div>
+           
           <h2>
             <i><u>NEXT MODULE</u></i>
           </h2>
@@ -267,20 +348,24 @@
             Choose <span style="background-color: blueviolet">one</span> of the
             modules listed below that should be taken after html
           </p>
-          <label for="css">Cascading Style sheets</label>
-          <input id="css" type="radio" name="next module" value="CSS" />
-          <label for="java">JAVASCRIPT</label>
-          <input id="java" type="radio" name="next module" value="JS" />
-          <label for="type">TYPE SCRIPT</label>
-          <input id="type" type="radio" name="next module" value="TS" />
-          <label for="react">REACT</label>
-          <input id="react" type="radio" name="next module" value="react" />
-          <br />
-          <br />
 
-          <button type="submit">Submit</button> <br />
-          <br />
-          <button type="reset">Reset</button>
+          
+          <input id="css" type="radio" name="next module" value="CSS" />
+          <label for="css">Cascading Style sheets</label>
+          
+          <input id="java" type="radio" name="next module" value="JS" />
+          <label for="java">JAVASCRIPT</label>
+          
+          <input id="type" type="radio" name="next module" value="TS" />
+          <label for="type">TYPE SCRIPT</label>
+         
+          <input  type="radio" id="react" name="next module" value="react" />
+           <label for="react">REACT</label>
+          <p><button type="submit">Submit</button></p>       
+          
+          <div><button type="reset">Reset</button></div>
+          
+          
         </form>
       </section>
     </main>
@@ -308,7 +393,8 @@
               <span>08108693932</span>
             </th>
             <th>
-                <img src="R.png" style="width: 20px; height: 20px;" alt=""> <span>2025Jimoh</span>
+                <a href="copyright.html"> <img src="R.png" style="width: 20px; height: 20px;" alt=""> <span>2025Jimoh</span></a>
+               
             </th>
             <th>
               <a
