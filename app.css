@@ -132,14 +132,7 @@ a:hover{
 a:active{
     color: yellow;
 }
-body{
-    background-image:url(https://th.bing.com/th/id/R.31e9a2b5844347a9376ddda84b8c7d3d?rik=srSKuucJkw5P5Q&pid=ImgRaw&r=0);
 
-    background-position:center;
-    background-repeat: no-repeat;
-
-
-}
 
 li :last-child{
     color: aqua;
@@ -233,4 +226,5 @@ h1,h2,h3{
 }
 p{
     color: #495057;
+
 }
