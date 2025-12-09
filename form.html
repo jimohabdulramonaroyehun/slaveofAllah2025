@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="C:\Users\h\Desktop\personal profile\app.css" />
-    <title>Log in</title>
+    <title>Assessment Form</title>
   </head>
   <body>
     <header>
@@ -59,16 +59,122 @@
         </table>
       </nav>
     </header>
+    <main>
+      <div>
+        <!-- Key PERFORMANCE Indicator -->
+        <h2 id="indicator"><u>SECOND WEEK ASSESSMENT FORM</u></h2>
+        <form action="/api/v1/personal" method="post">
+          <div>
+            <label for="name">Examiner`s Name</label>
+            <input
+              id="name"
+              type="text"
+              name="Name"
+              placeholder="Enter your full name with surname first"
+              required
+            />
+          </div>
 
-    <p class="log">
-      <label for="login">User Login</label>
-      <input
-        id="login"
-        type="email"
-        name="Email"
-        placeholder="enter your email address"
-      />
-    </p>
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="e.g jmoh@gmail.com"
+              maxlength="100"
+            />
+          </div>
+
+          <div>
+            <label for="phone">Phone Number</label>
+            <input
+              id="phone"
+              type="tel"
+              name="Phone Number"
+              placeholder="Enter your phone number e.g 08032222999"
+              pattern="[0-9]{11}"
+            />
+          </div>
+
+          <div>
+            <label for="date">Date</label>
+            <input
+              id="date"
+              type="date"
+              name="DATE"
+              placeholder="Enter Date eg 29 November 2025"
+            />
+          </div>
+          <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="Gender">
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="title">Title</label>
+            <input
+              id="title"
+              type="text"
+              name="title"
+              placeholder="Enter your title eg Dr., Engr., Mr; Mrs; etc"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="comment" style="display: block"
+              >Make a brief comment, suggestions and recommendation in respect
+              of sthe standard of this web page</label
+            >
+            <textarea
+              id="comment"
+              name="Comment"
+              cols="120"
+              rows="20"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="quality">Quality of Web Page</label>
+            <select id="quality" name="Qualty">
+              <option value="Excellent">Excellent</option>
+              <option value="Very Good">Very Good</option>
+              <option value="Good">Good</option>
+              <option value="fair">Fair</option>
+              <option value="poor">Poor</option>
+            </select>
+          </div>
+
+          <label for="check"> I am not a Robot </label>
+          <input id="check" type="checkbox" name="robotcheck" />
+
+          <div>
+            <h2 class="mod">
+              <i><u>NEXT MODULE</u></i>
+            </h2>
+            <p class="par">
+              Choose <span style="background-color: blueviolet">one</span> of
+              the modules listed below that should be taken after html
+            </p>
+            <label for="java">JAVASCRIPT</label>
+            <input id="java" type="radio" name="next module" value="JS" />
+            <label for="type">TYPE SCRIPT</label>
+            <input id="type" type="radio" name="next module" value="TS" />
+            <label for="react">REACT</label>
+            <input id="react" type="radio" name="next module" value="react" />
+          </div>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+    </main>
     <footer>
       <div class="fo">
         <!-- Contact -->

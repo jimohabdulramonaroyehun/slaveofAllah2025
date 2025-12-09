@@ -1,230 +1,374 @@
-
-
-
-
 /* comment */
 
-
-
-
-
-h1{
-    color: #495057;
-    font-size: 62px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.2;
-    letter-spacing: -2px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-     
+h1 {
+  color: #495057;
+  font-size: 62px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: -2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+p,
+.pink {
+  color: #495057;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+#white {
+  color: cyan;
+  font-weight: 700;
+}
+p {
+  font-size: 20px;
+  background-color: azure;
+}
+h2,
+h3 {
+  color: #212529;
+  line-height: 1.2;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-family: sans-serif;
+}
+h3,
+h1 {
+  background-color: blanchedalmond;
+}
+h1 {
+  text-transform: capitalize;
+}
+h2 {
+  background-color: lightskyblue;
+}
+li {
+  color: cornflowerblue;
+  font-size: 25px;
+  background-color: antiquewhite;
+}
+li:hover {
+  color: red;
+}
+a {
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+.pink {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.gradient {
+  color: darkorchid;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.in {
+  display: inline-block;
+  text-decoration: none;
 
-p,.pink{
-    color: #495057;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
+  border-radius: 8px;
 }
-#white{
-    color: cyan;
-    font-weight: 700;
+.inup {
+  background-color: aquamarine;
+  padding: 1.5rem 3rem;
+  color: white;
+}
+.indown {
+  background-color: goldenrod;
+  padding-top: 12px red;
+  padding-right: 13px blue;
+  padding-bottom: 12px green;
+  padding-left: 13px cyan;
+}
+.log {
+  text-align: center;
+}
+.button2 {
+  background-color: #339af0;
+  color: red;
+}
+nav {
+  background-color: skyblue;
+}
+body {
+  background-color: darkkhaki;
+}
+.gradient:link,
+:visited {
+  color: blue;
+}
+.gradient :hover,
+:active {
+  color: darkmagenta;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: green;
+}
+a:active {
+  color: yellow;
+}
+body {
+  background-image: url(https://th.bing.com/th/id/R.31e9a2b5844347a9376ddda84b8c7d3d?rik=srSKuucJkw5P5Q&pid=ImgRaw&r=0);
 
-}
-p{
-    font-size: 20px;
-    background-color: azure;
-
-}
-h2,h3{
-    color: #212529;
-    line-height: 1.2;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: -2px;
-    font-family: sans-serif
-
-    
-    
-}
-h3,h1{
-    background-color: blanchedalmond;
-}
-h2{
-    background-color:lightskyblue
-}
-li{
-    color: cornflowerblue;
-    font-size: 25px;
-    background-color: antiquewhite;
-}
-a{
-    font-size: 16px;
-    
-    
-
-}
-ul{
-    list-style: none;
-}
-.pink{
-    
-      
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-.gradient{
-    color: darkorchid;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.in{
-    display: inline-block;
-    text-decoration: none;
-    padding: 1.5rem 3rem;
-    border-radius: 8px;
-    color: white;
-    
-   
-    
-}
-.inup{
-    background-color: aquamarine;
-
-}
-.indown{
-    background-color: goldenrod;
-}
-.log{
-    text-align: center;
-}
-.button2{
-    background-color: #339af0;
-    color: red;
-    
-
-}
-nav{
-    background-color: skyblue;
-
-}
-body{
-    background-color: darkkhaki;
-
-
-}
-.gradient:link, :visited{
-    color: blue;
-}
-.gradient :hover, :active{
-    color: darkmagenta;
-}
-a:link{
-    color: blue;
-}
-a:visited{
-    color: red;
-}
-a:hover{
-    color: green;
-}
-a:active{
-    color: yellow;
-}
-
-
-li :last-child{
-    color: aqua;
-}
-li :nth-child(2n+1){
-    color: red;
-
-
-
-}
-li :first-child{
-    color: rgb(153, 107, 23);
-}
-    
-li:nth-child(5){
-    color: lime;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-tr:first-child{
-    color: #339af0;
-    background-color: antiquewhite;
-}
-tr:last-child{
-    color: coral;
-    background-color: darkgreen;
-}
-th:nth-child(2){
-    background-color: darkkhaki;
-}
-td:nth-child(2){
-    color: red;
-    background-color: dimgrey;
+li :last-child {
+  color: aqua;
 }
 
-td:hover,th:nth-child(2):hover{
-    color: aqua;
+li :first-child {
+  color: yellowgreen;
 }
 
-.css{
-    display: inline-block;
-    color: white;
-    background-color: #339af0;
-    border-radius: 8px;
-    padding: 1.5rem 3rem
-    
-
+li:nth-child(5) {
+  color: lime;
 }
-.selector{
-    display: inline-block;
-    color: rgb(15, 117, 75);
-    padding: 1rem 2rem;
-    border-radius: 5px;
 
-    background-color: lavender;
-    
-    
+tr:first-child {
+  color: #339af0;
+  background-color: antiquewhite;
+}
+tr:last-child {
+  color: coral;
+  background-color: darkgreen;
+}
+th:nth-child(2) {
+  background-color: darkkhaki;
+}
+td:nth-child(2) {
+  color: red;
+  background-color: dimgrey;
+}
+td:nth-child(2) {
+  background-color: pink;
+}
+td:nth-child(1) {
+  background-color: #339af0;
+  color: blue;
+}
 
+td:hover,
+th:nth-child(2):hover {
+  color: aqua;
+}
+
+.css {
+  display: inline-block;
+  color: white;
+  background-color: #339af0;
+  border-radius: 8px;
+  padding: 1.5rem 3rem;
+}
+.selector {
+  display: inline-block;
+  color: rgb(15, 117, 75);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+
+  background-color: lavender;
 }
 /* no need of link and visited pseudo name, they are only for anchor tag. others like hover and active can be use for heading, paragraph, etc */
-p:hover{
-    color: green;
+p:hover {
+  color: green;
 }
-p:active{
-    color:yellow;
+p:active {
+  color: yellow;
 }
-tr:nth-child(3){
-    color: chartreuse;
+tr:nth-child(3) {
+  color: chartreuse;
 }
-.article p{
-    color: lavenderblush;
+.article p {
+  color: lavenderblush;
 }
-.article p{
-    color: skyblue;
+.article p {
+  color: skyblue;
 }
-.div >p{
-    color: magenta;
+.div > p {
+  color: magenta;
 }
-input{
-    color: darkblue;
+input {
+  color: darkblue;
 }
-textarea{
-    color:red;
-    background-color: darkgray;
+textarea {
+  color: red;
+  background-color: darkgray;
 }
-a{
-    background-color: #d0ebff;
+a {
+  background-color: #d0ebff;
 }
-h1,h2,h3{
-    color: #212529;
+h1,
+h2,
+h3 {
+  color: #212529;
 }
-p{
-    color: #495057;
+p {
+  color: #495057;
+}
+.profile {
+  border-radius: 15%;
+  object-fit: cover;
+  width: 30px;
+  height: 30px;
+}
+.start {
+  width: 200px;
+  height: 150px;
+}
+.article p {
+  color: blueviolet;
+}
+.article > p {
+  color: palegreen;
+}
+.article h2 + p {
+  color: darkorange;
+}
+.article h2 ~ p {
+  color: brown;
+}
+.article h2 + p {
+  color: #495057;
+}
+.par {
+  color: cornflowerblue;
+}
+.start {
+  text-align: end;
+}
+ul {
+  list-style: square;
+}
+li:first-child {
+  color: darkmagenta;
+}
+li:last-child {
+  color: skyblue;
+}
+li:nth-child(3) {
+  color: palevioletred;
+}
+.hyper {
+  text-align: center;
+}
+.name {
+  text-align: right;
+}
+* {
+  color: black;
+  font-weight: 700;
+  border-right: 5px solid sandybrown;
+  border-left: 6px solid salmon;
+  border-bottom: 5px snow;
+  border-top: 3px solid plum;
+}
 
+.first::first-letter {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700px;
+}
+.bi::first-letter {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700px;
+}
+h2::first-line {
+  font-style: oblique;
+}
+.first::selection {
+  color: red;
+}
+.bi::selection {
+  color: red;
+}
+.mod::after {
+  content: "Course";
+}
+.per::after {
+  content: "profile";
+  font-size: 15px;
+  color: #339af0;
+  font-style: italic;
+}
+.ref {
+  background-color: #339af0;
+  border-radius: 2px;
+}
+.jimoh {
+  color: #d0ebff;
+}
+.abdul {
+  background-color: #339af0;
+}
+.aro {
+  background-color: orange;
+}
+.ter {
+  font-size: 32px;
+  line-height: 1;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.sol {
+  width: 500px;
+  height: 300px;
+}
+.nav {
+  padding-top: 2px red;
+  padding-right: 3px blue;
+  padding-bottom: 2px green;
+  padding-left: 3px cyan;
+}
+.ta {
+  padding: 20px;
+}
+.hmm {
+  padding: 10px 5px;
+  background-color: darkblue;
+}
+.bo {
+  width: 500px;
+  border-width: 10px;
+  border-color: blue;
+  border-style: double;
+  border-width: 10px;
+  padding: 20px;
+}
+.article {
+  border: darkmagenta double 10px;
+}
+.co {
+  width: 10px;
+  height: 15px;
+}
+.fo {
+  border-top: red double 5px;
+  border-bottom: green solid 6px;
+  border-right: 3px dashed dodgerblue;
+  border-left: deeppink 4px dotted;
+}
+.indown {
+  border: red 3px double;
+}
+.inup {
+  border: darkblue 3px dashed;
+}
+
+.bo {
+  width: 100%;
 }
