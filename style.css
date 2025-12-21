@@ -1,0 +1,216 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 1800px;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700px;
+}
+body {
+  background-color: #e5e5e5;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: #333;
+}
+footer:hover {
+  background-color: pink;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1px;
+}
+a:hover {
+  background-color: chartreuse;
+  color: blue;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section:target {
+  background-color: skyblue;
+}
+.ab {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.am {
+  flex-grow: 1;
+}
+.pb {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.pm {
+  flex-grow: 1;
+}
+.cb {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.cm {
+  flex-grow: 1;
+}
+.copy {
+  text-decoration: underline;
+}
+
+.intro {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.intro:hover {
+  color: blue;
+  background-color: lightblue;
+}
+.jimo {
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700px;
+
+  align-items: center;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 20px;
+}
+.image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 7px auto;
+}
+label {
+  margin-bottom: 3px;
+}
+textarea {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: red;
+  background-color: bisque;
+}
+textarea:hover {
+  background-color: lightblue;
+}
+p {
+  text-align: justify;
+  line-height: 2;
+  margin-bottom: 0.5px;
+  margin-top: 0.5px;
+  font-size: 20px;
+  /* letter-spacing: 1rem; */
+}
+p:hover {
+  color: #fff;
+  background-color: #3498db;
+  transition: 0.3s ease;
+}
+.face {
+  width: 50px;
+  height: 30px;
+  padding: 1px;
+}
+.whatsa {
+  width: 35px;
+  height: 30px;
+  padding: 1px;
+}
+.right {
+  width: 35px;
+  height: 30px;
+  padding: 1px;
+}
+.mail {
+  width: 35px;
+  height: 30px;
+  padding: 1px;
+}
+.form,
+.con {
+  border-bottom: #333 double 3px;
+}
+input,
+textarea {
+  margin-bottom: 30px;
+}
+.brief,
+.list,
+.interest {
+  border-bottom: #333 double 5px;
+}
+.brief:hover,
+.list:hover,
+.interest:hover,
+.jimo:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+li {
+  margin-bottom: 5px;
+  list-style: square;
+}
+
+li:nth-child(2n + 1):hover {
+  background-color: lightskyblue;
+  color: black;
+}
+li:nth-child(2n):hover {
+  background-color: lightskyblue;
+  color: red;
+}
+li:last-child:hover {
+  background-color: lightcyan;
+  color: dodgerblue;
+}
+li:first-child:hover {
+  background-color: aquamarine;
+  color: deeppink;
+}
