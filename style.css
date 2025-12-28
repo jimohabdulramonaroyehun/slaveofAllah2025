@@ -178,7 +178,6 @@ p {
   margin-bottom: 0.5px;
   margin-top: 0.5px;
   font-size: 20px;
-  /* letter-spacing: 1rem; */
 }
 p.copycontainer:hover {
   color: #fff;
@@ -235,9 +234,7 @@ p.h:hover {
 .form {
   border-bottom: #333 double 3px;
 }
-/* .con {
-  border-bottom: #333 double 3px;
-} */
+
 input,
 textarea {
   margin-bottom: 30px;
@@ -292,17 +289,12 @@ li:first-child:hover {
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover {
   display: block;
-  /* margin-top: 15px; */
 }
 
 .dot-menu {
   cursor: pointer;
   width: 30px;
   height: 2px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* margin-bottom: 5px; */
 }
 .dot-menu::after {
   content: "\...";
@@ -310,7 +302,6 @@ li:first-child:hover {
 }
 label {
   margin-top: 45px;
-  /* margin-bottom: 5px; */
 }
 footer {
   margin-top: 25px;
@@ -318,12 +309,7 @@ footer {
 .lab {
   margin-top: 35px;
 }
-/* .dropdown-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-} */
+
 a {
   margin-right: 45px;
 }
@@ -331,17 +317,13 @@ a {
   width: 800px;
   height: auto;
   border: gainsboro solid 2px;
-  /* transition: border-color 0.5s ease; */
+
   padding: 5px;
   border-radius: 10px;
   text-align: center;
   animation: pulse 2s infinite;
-  /* animation: copyr 2s infinite; */
-  /* position: relative; */
 }
-/* .copycontainer:hover {
-  border-color: #f00;
-} */
+
 @keyframes pulse {
   0% {
     border: darkgreen;
@@ -369,7 +351,7 @@ a {
 
 .co {
   display: flex;
-  /* justify-content: space-around; */
+
   align-items: center;
   gap: 50px;
 }
@@ -382,7 +364,6 @@ a {
 .b {
   width: 800px;
   height: auto;
-  /* border: #333 solid 2px; */
 }
 .c {
   text-align: justify;
@@ -393,12 +374,6 @@ a {
   height: 100%;
   position: absolute;
   background-image: conic-gradient(red, blue);
-  /* top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 3px;
-  border-radius: 10px; */
 }
 .b {
   display: flex;
@@ -427,36 +402,95 @@ a {
   filter: blur(1.5rem);
   opacity: 0.5;
 }
-/* .card {
-  width: 300px;
-  margin: 0 auto;
-  padding: 2em;
-  background-color: #1c1f2b;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-}
-.card::after .card::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-image: conic-gradient(red, blue) (transparent, green);
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  padding: 10px;
-  border-radius: 10px;
-}
-.card::before {
-  filter: blur(1.5rem);
-  opacity: 0.5;
-} */
-.lab1 {
-  background-color: var(--accent-color);
-  padding: 1em;
-}
 .hom {
   border-bottom: 2px solid var(--text-color);
+}
+.islamic-images {
+  display: flex;
+  margin: 3em auto;
+  gap: 1em;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  anchor-name: --islamicimages;
+  scroll-snap-type: x mandatory;
+  scroll-marker-group: after;
+}
+.islamic-images::-webkit-scrollbar {
+  display: none;
+}
+.islamic-images::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+.im1::scroll-marker {
+  content: "";
+  height: 1em;
+  width: 1em;
+  background-color: darkslategrey;
+  border-radius: 50%;
+}
+.im1::scroll-marker:target-current {
+  background-color: aqua;
+}
+.intro {
+  margin-top: 2em;
+}
+.islamic-images::scroll-button(right) {
+  content: "→";
+  width: 60px;
+  height: 60px;
+  background-color: indigo;
+  color: white;
+  border: none;
+  font-size: 3rem;
+  font-family: consolas;
+  border-radius: 50%;
+  padding-bottom: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  position-anchor: --islamicimages;
+  position-area: right center;
+  translate: -50%;
+}
+.islamic-images::scroll-button(left) {
+  content: "←";
+  width: 60px;
+  height: 60px;
+  background-color: indigo;
+  color: red;
+  border: none;
+  font-size: 3rem;
+  font-family: consolas;
+  border-radius: 50%;
+  padding-bottom: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  position-anchor: --islamicimages;
+  position-area: left center;
+  translate: 50%;
+}
+.islamic-images::scroll-button(right):disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+.islamic-images::scroll-button(left):disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+.im1 {
+  flex: 1 0 30em;
+  aspect-ratio: 5/3;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: center;
+  align-content: center;
+  background-color: var(--accent-color);
+  scroll-snap-align: start;
+}
+@media (max-width: 500px) {
+  .islamic-images {
+    flex: 0 0 100%;
+  }
 }
