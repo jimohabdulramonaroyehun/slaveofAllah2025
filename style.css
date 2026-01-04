@@ -297,7 +297,7 @@ li:first-child:hover {
   height: 2px;
 }
 .dot-menu::after {
-  content: "\...";
+  content: "\≡";
   font-size: 35px;
 }
 label {
@@ -407,22 +407,25 @@ a {
 }
 .islamic-images {
   display: flex;
-  margin: 3em auto;
-  gap: 1em;
-  width: 100%;
+  margin: 1em auto;
+  gap: 2em;
+
   overflow-x: auto;
+
+  aspect-ratio: 5/3;
   scroll-behavior: smooth;
   anchor-name: --islamicimages;
   scroll-snap-type: x mandatory;
   scroll-marker-group: after;
 }
+
 .islamic-images::-webkit-scrollbar {
   display: none;
 }
 .islamic-images::scroll-marker-group {
   display: flex;
   justify-content: center;
-  gap: 0.5em;
+  gap: 3em;
 }
 .im1::scroll-marker {
   content: "";
@@ -480,17 +483,142 @@ a {
   cursor: auto;
 }
 .im1 {
-  flex: 1 0 30em;
-  aspect-ratio: 5/3;
+  aspect-ratio: 5/2;
   border-radius: 0.5em;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
   align-content: center;
   background-color: var(--accent-color);
   scroll-snap-align: start;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 300px) {
   .islamic-images {
     flex: 0 0 100%;
   }
+}
+
+.jimo {
+  position: relative;
+  width: max-content;
+}
+
+.jimo::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    red,
+    blue,
+    green,
+    skyblue,
+    orange
+  );
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.lab1 {
+  border: 2px solid;
+  border-image: linear-gradient(to right, red, orange, cyan, purple, green) 1;
+  width: max-content;
+}
+
+.section2 {
+  margin-top: 25px;
+}
+
+.grid-parentcontainer {
+  background-color: #fff;
+  padding: 10px;
+
+  margin-top: 30px;
+  height: max-content;
+}
+.grid-container {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+  gap: 1em;
+  justify-content: center;
+  grid-template-areas: "box1 box1 box2 box7" "box1 box1 box3 box8" "box4 box5 box6 box8";
+
+  background-color: aqua;
+}
+.item {
+  background-color: #3498db;
+  border-radius: 1px;
+  color: white;
+  font-size: 12px;
+  padding: 2em;
+  text-align: center;
+}
+.item13 {
+  transition-property: transform;
+  transition-duration: 1.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+  background-color: #3498db;
+  border-radius: 1px;
+  color: white;
+  font-size: 12px;
+  padding: 2em;
+  text-align: center;
+}
+.item13:hover {
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+.item3 {
+  background: linear-gradient(to bottom right, red, green, pink, orange);
+}
+.item5 {
+  background: radial-gradient(
+    circle at center,
+    green,
+    pink,
+    yellow,
+    cyan,
+    purple
+  );
+}
+.item7 {
+  background: radial-gradient(
+    farthest-corner at 100px 100px,
+    blue,
+    indigo 9%,
+    skyblue 25%,
+    violet,
+    black,
+    white
+  );
+}
+.item9 {
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    grey,
+    green,
+    pink,
+    skyblue,
+    navajowhite,
+    rgba(122, 109, 156, 0.5)
+  );
+
+  transition-property: transform;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease;
+}
+.item9:hover {
+  transform: rotate(45deg);
+  transform: skewX(30deg);
+}
+.item12 {
+  background: conic-gradient(
+    rgba(212, 148, 65, 0.7),
+    darkolivegreen,
+    lightskyblue,
+    indigo
+  );
 }
