@@ -155,7 +155,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 7px auto;
+  margin: 5px auto;
 }
 label {
   margin-bottom: 3px;
@@ -163,7 +163,7 @@ label {
 textarea {
   width: 100%;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   padding: 10px;
   border: 1px solid #ccc;
   color: red;
@@ -237,7 +237,7 @@ p.h:hover {
 
 input,
 textarea {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .brief,
 .list,
@@ -641,4 +641,88 @@ a {
 }
 .circle:hover {
   transform: scale(3);
+}
+.item3 {
+  animation: praise 2s ease infinite;
+}
+@keyframes praise {
+  to {
+    transform: translateX(100px) rotate(360deg) scale(3);
+  }
+}
+.item18 {
+  background: radial-gradient(
+    farthest-corner,
+    yellow,
+    cyan,
+    orange,
+    rgba(66, 6, 61, 0.7)
+  );
+}
+.grid-container {
+  background: radial-gradient(
+    farthest-corner,
+    rgba(133, 134, 163, 0.9),
+    rgb(43, 19, 19),
+    rgb(133, 94, 161),
+    green,
+    rgb(35, 109, 109)
+  );
+}
+.intro {
+  marks: var(--accent-color);
+}
+.item,
+.item13 {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+}
+#login-toggle {
+  display: none;
+}
+.login-popup {
+  display: none;
+  position: relative;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: max-content;
+}
+#login-toggle:checked + .login-popup {
+  display: block;
+}
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 20px;
+  background: #f00;
+  width: max-content;
+  margin-top: 0;
+}
+.log {
+  /* position: absolute; */
+  /* border: 3px solid rgba(53, 164, 179, 0.9); */
+  color: black;
+  width: max-content;
+}
+.logi {
+  width: 50px;
+  height: 40px;
+  border: 5px solid;
+  background: linear-gradient(to right, red, yellow, green, cyan);
+  background-size: 200% 100%;
+  animation: bor 5s linear infinite;
+  margin-top: 15px;
+}
+@keyframes bor {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
