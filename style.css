@@ -704,8 +704,6 @@ a {
   margin-top: 0;
 }
 .log {
-  /* position: absolute; */
-  /* border: 3px solid rgba(53, 164, 179, 0.9); */
   color: black;
   width: max-content;
 }
@@ -724,5 +722,17 @@ a {
   }
   100% {
     background-position: 100% 0;
+  }
+}
+.moving {
+  animation: move 5s linear infinite;
+  white-space: nowrap;
+}
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
